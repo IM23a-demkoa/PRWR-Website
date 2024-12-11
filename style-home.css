@@ -1,0 +1,118 @@
+.banner {
+    border-style: solid;
+    border-color: #F90E0E;
+    background-color: #F90E0E;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    background-color: #FFE1E7;
+    margin: 0;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.link {
+    border-style: solid;
+    border-color: #F2E8E0;
+    background-color: #F2E8E0;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 10px 5px 10px 5px;
+}
+
+* {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.over-welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome {
+    border-style: solid;
+    border-color: #D9D9D9;
+    background-color: #D9D9D9;
+    padding: 10px;
+    border-radius: 30px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link:hover {
+    background-color: white;
+    border-color: white;
+}
+
+.overview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.card:hover {
+    transform: scale(1.32);
+}
+.platzhalter {
+    border-style: solid;
+    border-color: grey;
+    background-color: grey;
+    width: 340px;
+    height: 260px;
+}
+
+a {
+    all: unset;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 180px 180px 80px;
+    grid-template-areas: "image" "text";
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+    text-align: center;
+    margin: 100px;
+    width: 310px;
+    transition: transform 1s;
+    transform: scale(1.24)
+
+}
+.card-img{
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background:url("pictures/img.png");
+    background-size: cover;
+
+}
+
+.card-text{
+    grid-area: text;
+    margin: 30px;
+}
+.card-text h2 {
+    color: #c90570;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.card-text p {
+    color: #020e29;
+    font-size: 15px;
+}
