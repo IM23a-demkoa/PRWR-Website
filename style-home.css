@@ -97,7 +97,7 @@ a {
     grid-area: image;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    background:url("../PRWR-Website/pictures/img.png");
+    background:url("pictures/img.png");
     background-size: cover;
 
 }
