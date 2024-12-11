@@ -1,0 +1,129 @@
+body {
+    background-color: #FFE1E7;
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.banner {
+    border-style: solid;
+    border-color: #F90E0E;
+    background-color: #F90E0E;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+
+.banner div {
+    color: #D3BB6E;
+    font-size: 3vw;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.link {
+    border-style: solid;
+    border-color: #F2E8E0;
+    background-color: #F2E8E0;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+
+
+
+
+.link:hover {
+    background-color: white;
+    border-color: white;
+}
+
+.over-marken {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 10px;
+}
+
+.markentitel {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px;
+}
+
+.marke {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.marke-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.marke-text {
+    max-width: 600px;
+    margin: 20px;
+    text-align: left;
+}
+
+.marke-text h2 {
+    color: #6a1a1a;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.marke-text p {
+    color: #020e29;
+    font-size: 1rem;
+}
+
+/*lueg de stuff ah*/
+@media (max-width: 768px) {
+    .banner div {
+        font-size: 6vw;
+    }
+
+    .marke {
+        flex-direction: column;
+    }
+
+    .marke-img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .marke-text {
+        max-width: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .link {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+
+    .markentitel {
+        font-size: 1.8rem;
+    }
+}

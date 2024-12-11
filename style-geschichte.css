@@ -1,0 +1,99 @@
+body {
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0;
+    background-color: #FFE1E7;
+}
+.banner {
+    border-style: solid;
+    border-color: #F90E0E;
+    background-color: #F90E0E;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.link {
+    border-style: solid;
+    border-color: #F2E8E0;
+    background-color: #F2E8E0;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 10px 5px 10px 5px;
+}
+
+a {
+    all: unset;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background: #3498db;
+    left: 50%;
+}
+.timeline-item {
+    position: relative;
+    padding: 20px;
+    background: white;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.timeline-item:nth-child(odd) {
+    margin-right: 50%;
+    text-align: right;
+}
+.timeline-item:nth-child(even) {
+    margin-left: 50%;
+}
+.timeline-item::before {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #3498db;
+    border-radius: 15px;
+    top: 15px;
+}
+.timeline-item:nth-child(odd)::before {
+    left: -12px;
+}
+.timeline-item:nth-child(even)::before {
+    right: -12px;
+}
+.timeline-date {
+    color: #777;
+    font-weight: bold;
+}
+.timeline-title {
+    margin: 10px 0;
+    color: #333;
+}
+.timeline-description {
+    color: #666;
+}
+
+
+.geschichte-titel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.markentitel {
+    font-size: 40px;
+    margin-top: 20px;
+}
