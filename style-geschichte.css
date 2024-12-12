@@ -1,8 +1,9 @@
 body {
-    font-family: 'JetBrains Mono', monospace;
-    margin: 0;
     background-color: #FFE1E7;
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace;
 }
+
 .banner {
     border-style: solid;
     border-color: #F90E0E;
@@ -11,6 +12,13 @@ body {
     width: 100%;
     text-align: center;
 }
+
+
+.banner div {
+    color: #D3BB6E;
+    font-size: 3vw;
+}
+
 .navigation {
     display: flex;
     flex-wrap: wrap;
@@ -25,7 +33,17 @@ body {
     background-color: #F2E8E0;
     padding: 5px;
     border-radius: 15px;
-    margin: 10px 5px 10px 5px;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+
+
+.link:hover {
+    background-color: white;
+    border-color: white;
 }
 
 a {
