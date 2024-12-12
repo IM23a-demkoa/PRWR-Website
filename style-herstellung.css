@@ -1,3 +1,9 @@
+body {
+    background-color: #FFE1E7;
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace;
+}
+
 .banner {
     border-style: solid;
     border-color: #F90E0E;
@@ -5,12 +11,20 @@
     height: auto;
     width: 100%;
     text-align: center;
+    padding: 10px 0;
+}
+.geschichte-titel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
 }
 
-body {
-    background-color: #FFE1E7;
-    margin: 0;
+.markentitel {
+    font-size: 40px;
+    margin-top: 20px;
 }
+
 
 .navigation {
     display: flex;
@@ -26,11 +40,16 @@ body {
     background-color: #F2E8E0;
     padding: 5px;
     border-radius: 15px;
-    margin: 10px 5px 10px 5px;
+    margin: 10px 5px;
 }
 
-* {
-    font-family: 'JetBrains Mono', monospace;
+.link:hover {
+    background-color: white;
+    border-color: white;
+}
+
+a {
+    all: unset;
 }
 
 .over-welcome {
@@ -50,12 +69,50 @@ body {
     margin-top: 20px;
 }
 
-.link:hover {
-    background-color: white;
-    border-color: white;
+.steps {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
 }
 
-a {
-    all: unset;
+.step {
+    background-color: #FFF;
+    border: 1px solid #D3BB6E;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.step h2 {
+    color: #F90E0E;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 1em;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .step h2 {
+        font-size: 1.2em;
+    }
+
+    .step p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .link {
+        margin: 5px;
+        padding: 3px;
+    }
+
+    .step {
+        padding: 10px;
+    }
+}

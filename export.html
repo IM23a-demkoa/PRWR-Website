@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Schweizer Schokolade</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style-export.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 <div>
@@ -21,5 +22,72 @@
         </div>
     </div>
 </div>
+
+<section class="geschichte-titel">
+    <div class="markentitel"> Export</div>
+</section>
+<div class="overview">
+    <div class="chart-container">
+        <h2>Export Länder</h2>
+        <canvas id="pieChart" width="300" height="300"></canvas>
+        <p>
+            Die Schweiz exportiert rund 150'000 Tonnen Schokolade pro Jahr. Der absolut grösste Käufer ist mit
+            Abstand Deutschland gefolgt von dem Vereinigten Königreich und Frankreich.
+        </p>
+    </div>
+
+    <div class="chart-container">
+        <h2>Exportwachstum</h2>
+        <canvas id="lineChart" width="300" height="300"></canvas>
+        <br>
+        <p>
+            Die Schweiz exportiert immer mehr Schokolade pro Jahr, der Rückgang 2020 und 2021 erklärt sich jedoch durch
+            die Pandemie.
+        </p>
+    </div>
+</div>
+<script>
+    const pieData = {
+        labels: ['Deutschland', 'Frankreich', 'Vereinigtes Königreich', 'Kanada', 'USA', 'Spanien', 'Andere Länder'],
+        datasets: [{
+            data: [21.7, 8.6, 9.2, 8, 6, 4, 42.7],
+            backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#9dfa5f', '#8b5ffa', '#5f79fa', '#5ffaa2']
+        }]
+    };
+
+    const pieConfig = {
+        type: 'pie',
+        data: pieData
+    };
+
+    const lineData = {
+        labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+        datasets: [{
+            label: 'Export in Tonnen',
+            data: [131, 132, 139, 137, 140, 128, 148, 150, 150.5],
+            borderColor: '#36A2EB',
+            fill: false,
+            tension: 0.1
+        }]
+    };
+
+    const lineConfig = {
+        type: 'line',
+        data: lineData
+    };
+
+    new Chart(document.getElementById('pieChart'), pieConfig);
+    new Chart(document.getElementById('lineChart'), lineConfig);
+</script>
 </body>
+<nav class="banner">
+    <br>
+    <a style="color: white; font-size: 20px;">Impressum</a>
+    <a href="Quellen-Schweizer-Schokolade.pdf" style="color: white; font-size: 20px; margin: 0 40px 0 40px;">Quellen</a>
+    <a href="https://github.com/IM23a-demkoa" target="_blank" style="color: white; font-size: 20px;">Altin</a>
+    <a href="https://github.com/IM23a-schmido" style="color: white; font-size: 20px; margin-left: 40px;">Olaf</a>
+    <br>
+    <br>
+    <br>
+</nav>
 </html>
